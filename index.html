@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Lock & Safe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(to right, #0066cc, #003366);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav {
+            background: #004080;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #003366;
+            transform: scale(1.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            text-align: center;
+        }
+        .container h2 {
+            color: #0066cc;
+            margin-bottom: 20px;
+        }
+        .button-primary {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px 0;
+            background-color: #0066cc;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .button-primary:hover {
+            background-color: #003366;
+            transform: translateY(-3px);
+        }
+        footer {
+            background: #004080;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+        .footer-social {
+            margin-top: 10px;
+        }
+        .footer-social a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+        .footer-social a:hover {
+            color: #ddd;
+        }
+        /* Hyperlink Styling */
+        a.custom-link {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+        a.custom-link:hover {
+            color: #003366;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        /* Partners Section Styling */
+        .partners {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .partner {
+            flex: 1 1 calc(25% - 20px);
+            max-width: 200px;
+            margin: 10px;
+        }
+        .partner img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .partner img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, rgba(0, 102, 204, 0.8), rgba(0, 51, 102, 0.8)), url('realback.jpg') center/cover no-repeat;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+        .hero p {
+            font-size: 1.5em;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+        /* Responsive Styles */
+        @media only screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin-bottom: 10px;
+            }
+            .container {
+                width: 95%;
+            }
+            .partner {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            .partner {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Commercial Lock & Safe Ltd.</h1>
+        <p>Your 24-Hour Locksmith Proudly Serving Vancouver & Surrounding Areas</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#partners">Products</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Secure Your World with Confidence</h1>
+        <p>Experience unmatched security solutions for your home and business.</p>
+        <a href="#contact" class="button-primary">Get a Free Quote</a>
+    </div>
+
+    <div class="container" id="home">
+        <h2>Welcome to Commercial Lock & Safe Ltd.</h2>
+        <p>Locks and safes may have been invented centuries ago, but their importance has always remained the same. As security features, these mechanisms provide safekeeping for valuables, money, and properties, while also creating a safe environment for individuals.</p>
+        <p>To ensure your safety is never compromised, <strong>Commercial Lock & Safe Ltd.</strong> is available. With over 30 years of experience, our locksmiths use only the most durable and reliable products to protect you.</p>
+        <p>For more information about our services, check out our service page.</p>
+    </div>
+
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p><strong>Honest Locksmiths with Exceptional Workmanship.</strong></p>
+        <p>Our business is built on reputation, with a large part of our work stemming from word-of-mouth referrals. Our clients appreciate our honesty and workmanship. We don’t upsell services, and you can always expect transparency from us.</p>
+        <p>We proudly serve residential and commercial properties across Vancouver and the Lower Mainland.</p>
+    </div>
+
+    <div class="container" id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Master Keying</li>
+            <li>Safe Work</li>
+            <li>Electric Strike Installation</li>
+            <li>High-Security Lock Work</li>
+            <li>Mailbox Locks</li>            
+            <li>Key Control</li>
+            <li>Lock Hardware</li>
+        </ul>
+        <p>Need more details on our services? <a href="#contact" class="custom-link">give us a call or email us</a>.</p>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Phone:</strong> 604-626-3322</p>
+        <p><strong>Email:</strong> commerciallockandsafe2@gmail.com</p>
+        <p><strong>Hours:</strong> 7 days a week (with staff availability)</p>
+        <p><strong>Service Areas:</strong> Vancouver, Burnaby, Tri-Cities, Surrey, Richmond, New Westminster, Maple Ridge, Pitt Meadows, Greater Vancouver Regional District</p>
+        <p>Check out our <a class="custom-link" href="your-location-link.com" target="_blank">service coverage map</a>.</p>
+    </div>
+
+    <div class="container" id="partners">
+        <h2>Our Trusted Products</h2>
+        <h3>Door Hardware</h3>
+        <div class="partners">
+            <div class="partner">
+                <a href="https://www.assaabloydss.ca/en" target="_blank">
+                    <img src="comlock/images/assa open.png" alt="ASSA ABLOY Logo">
+                </a>
+            </div>
+            <div class="partner">
+                <a href="https://www.linearinteriorsystems.com/" target="_blank">
+                    <img src="comlock/images/logo-Linear-Interior-Systems.png" alt="Linear Interior Systems Logo">
+                </a>
+            </div>
+            <div class="partner">
+                <a href="https://www.sargentlock.com/en" target="_blank">
+                    <img src="comlock/images/sargent.png" alt="Sargent Lock Logo">
+                </a>
+            </div>
+            <div class="partner">
+                <a href="https://www.dorex.com/" target="_blank">
+                    <img src="comlock/images/dorex.png" alt="Dorex Logo">
+                </a>
+            </div>
+            <div class="partner">
+                <a href="https://www.corbinrusswin.com/en" target="_blank">
+                    <img src="comlock/images/coriobn.png" alt="Corbin Russwin Logo">
+                </a>
+            </div>
+            <div class="partner">
+                <a href="https://www.adamsrite.com/en/index" target="_blank">
+                    <img src="comlock/images/adams.png" alt="Adams Rite Logo">
+                </a>
+            </div>
+            <div class="partner">
+                <a href="https://www.schlage.ca/en/home.html" target="_blank">
+                    <img src="comlock/images/shlage.jfif" alt="Schlage Logo">
+                </a>
+            </div>
+            <div class="partner">
+                <a href="https://www.lcnclosers.com/en/index.html" target="_blank">
+                    <img src="comlock/images/lcn.jfif" alt="LCN Closers Logo">
+                </a>
+            </div>
+            <div class="partner">
+                <a href="https://lawrencehardware.com/" target="_blank">
+                    <img src="comlock/images/lawrnrece.png" alt="Lawrence Hardware Logo">
+                </a>
+            </div>
+            <div class="partner">
+                <a href="https://accesshardware.com/rci-rutherford-controls-international-corp/" target="_blank">
+                    <img src="comlock/images/rci.png" alt="RCI Rutherford Controls Logo">
+                </a>
+            </div>
+        </div>
+        
+        <h3>Safes</h3>
+        <div class="partners">
+            <div class="partner">
+                <a href="https://www.brawnsecurity.com/" target="_blank">
+                    <img src="comlock/images/brawn.png" alt="Brawn Security Logo">
+                </a>
+            </div>
+            <div class="partner">
+                <a href="https://americansecuritysafes.com/" target="_blank">
+                    <img src="comlock/images/amsec.png" alt="American Security Safes Logo">
+                </a>
+            </div>
+            <div class="partner">
+                <a href="https://diasafes.com/" target="_blank">
+                    <img src="comlock/images/bumil.png" alt="DIA Safes Logo">
+                </a>
+            </div>
+        </div>
+        
+        <h3>Padlocks</h3>
+        <div class="partners">
+            <div class="partner">
+                <a href="https://www.masterlock.com/" target="_blank">
+                    <img src="comlock/images/masterlock.png" alt="Master Lock Logo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Commercial Lock & Safe Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>
